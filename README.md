@@ -9,12 +9,30 @@ This work was completed as part of the **SEN4107 — Introduction to Neural Netw
 
 ## Project Structure
 
+```
 fashionMNIST/
 ├── model1_pytorch/
-│ ├── Model1_Full.ipynb
-│ └── outputs/
+│   ├── Model1_Full.ipynb
+│   └── outputs/
 ├── model2_pytorch/
-│ ├── Model2_Full.ipynb
-│ └── outputs/
+│   ├── Model2_Full.ipynb
+│   └── outputs/
 ├── FashionMNIST_Report.pdf
 └── README.md
+```
+
+---
+
+## Results Summary
+
+| Model | Description | Test Accuracy |
+|-------|------------|---------------|
+| Model 1 | Baseline CNN | ~93% |
+| Model 2 | CNN + BatchNorm + Dropout | ~92% |
+
+---
+
+## Final Report
+
+Full methodology, comparison and analysis are provided in the report:  
+**FashionMNIST_Report.pdf**
