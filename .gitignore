@@ -205,3 +205,38 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# IDE
+.idea/
+.vscode/
+
+# OS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# ML / outputs
+runs/
+logs/
+checkpoints/
+models/
+*.pt
+*.pth
+*.h5
+*.ckpt
+
+# Data (istersen)
+data/
+datasets/ilk önce 
