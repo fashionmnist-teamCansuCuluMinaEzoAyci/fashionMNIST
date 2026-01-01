@@ -1,0 +1,13 @@
+{
+  "best_val_acc": 0.934,
+  "device": "mps",
+  "config": {
+    "seed": 42,
+    "batch_size": 128,
+    "epochs": 12,
+    "lr": 0.001,
+    "weight_decay": 0.0,
+    "val_ratio": 0.1,
+    "num_workers": 0
+  }
+}

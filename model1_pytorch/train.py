@@ -42,7 +42,7 @@ def ensure_dirs(base_dir: Path) -> tuple[Path, Path]:
     return ckpt_dir, fig_dir
 
 
-@torch.no_grad()
+@torch.no_grad() # Do not compute gradients inside the function because we are not training
 def evaluate(model: nn.Module, loader: DataLoader, device: torch.device) -> tuple[float, float]:
     model.eval()
     total, correct = 0, 0

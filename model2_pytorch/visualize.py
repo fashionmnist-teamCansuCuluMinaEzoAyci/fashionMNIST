@@ -7,9 +7,23 @@ from torch.utils.data import DataLoader
 from model import build_model
 
 
+'''
 def get_device():
     return "cuda" if torch.cuda.is_available() else "cpu"
+'''
 
+def get_device():
+    # 1) Apple Silicon GPU (M1/M2/M3)
+    if torch.backends.mps.is_available() and torch.backends.mps.is_built():
+        return torch.device("mps")
+    
+    # 2) NVIDIA GPU (Windows / Linux)
+    if torch.cuda.is_available():
+        return torch.device("cuda")
+    
+    # 3) CPU (herkes çalıştırabilir)
+    return torch.device("cpu")
+    
 
 @torch.no_grad()
 def main():
